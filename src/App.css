@@ -27,7 +27,7 @@ body {
 }
 
 .top-head {
-  height: 124px;
+  height: 76px;
   background: #fff;
   border-bottom: 1px solid #e6eaf2;
   display: flex;
@@ -46,55 +46,55 @@ body {
 
 .brand h2 {
   margin: 0;
-  font-size: 41px;
+  font-size: 18px;
   color: var(--main);
 }
 
 .brand p {
   margin: 6px 0 0;
   color: #99a7bf;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .logo {
-  width: 72px;
-  height: 72px;
+  width: 58px;
+  height: 52px;
   border-radius: 50%;
   border: 2px solid #6d8fb9;
   color: #6d8fb9;
   display: grid;
   place-items: center;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .hero-head {
   background: #275fa5;
   color: #fff;
-  min-height: 206px;
+  min-height: 148px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
-  padding: 26px 20px;
+  gap: 56px;
+  padding: 20px;
 }
 
 .title-block h1 {
   margin: 0;
-  font-size: 58px;
+  font-size: 46px;
 }
 
 .title-block p {
   margin: 8px 0 0;
   color: #c8d5e8;
-  font-size: 41px;
+  font-size: 18px;
 }
 
 .progress-wrap {
-  min-width: 380px;
+  min-width: 300px;
 }
 
 .progress-wrap strong {
-  font-size: 40px;
+  font-size: 22px;
   display: block;
 }
 
@@ -102,14 +102,14 @@ body {
 .progress-wrap small {
   display: block;
   color: #c4d2e4;
-  font-size: 28px;
+  font-size: 16px;
   margin-top: 6px;
 }
 
 .bar {
   margin-top: 12px;
   width: 100%;
-  height: 16px;
+  height: 12px;
   border-radius: 999px;
   background: #4f79ae;
   overflow: hidden;
@@ -130,7 +130,7 @@ body {
   width: 1160px;
   max-width: calc(100% - 40px);
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 18px 0;
 }
 
 .step {
@@ -141,16 +141,16 @@ body {
 .step:not(:last-child)::before {
   content: '';
   position: absolute;
-  top: 28px;
+  top: 21px;
   left: -50%;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: #20c28f;
 }
 
 .bullet {
-  width: 56px;
-  height: 56px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   margin: 0 auto 8px;
   display: grid;
@@ -171,32 +171,32 @@ body {
 
 .step span {
   color: #4d668b;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .form-area {
   width: 1160px;
   max-width: calc(100% - 40px);
-  margin: 30px auto 70px;
+  margin: 24px auto 54px;
 }
 
 .card {
   background: var(--surface);
   border: 1px solid #e4e8f0;
-  border-radius: 16px;
-  margin-bottom: 24px;
+  border-radius: 10px;
+  margin-bottom: 18px;
   overflow: hidden;
-  padding-bottom: 24px;
+  padding-bottom: 18px;
 }
 
 .card > header {
-  height: 88px;
+  height: 76px;
   display: flex;
   align-items: center;
-  padding: 0 34px;
+  padding: 0 24px;
   color: #fff;
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -209,16 +209,16 @@ body {
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  padding: 24px 28px;
+  gap: 14px;
+  padding: 20px 24px;
 }
 
 .field span {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: #243d63;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .field em {
@@ -230,26 +230,26 @@ input,
 textarea {
   width: 100%;
   border: 1px solid #d8e0ec;
-  border-radius: 12px;
-  height: 64px;
-  padding: 0 16px;
+  border-radius: 10px;
+  height: 52px;
+  padding: 0 14px;
   background: #f4f6fa;
   color: #415b80;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 textarea {
-  height: 112px;
-  padding-top: 16px;
+  height: 84px;
+  padding-top: 12px;
 }
 
 .full {
-  padding: 0 28px;
+  padding: 0 24px;
   display: block;
 }
 
 .uploads {
-  padding: 24px 28px;
+  padding: 20px 24px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
@@ -257,57 +257,57 @@ textarea {
 
 .upload h4 {
   margin: 0 0 8px;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .drop {
   border: 2px dashed #dbe2ed;
-  border-radius: 14px;
-  height: 92px;
+  border-radius: 12px;
+  height: 82px;
   display: grid;
   place-items: center;
-  font-size: 28px;
+  font-size: 16px;
   color: #93a2b8;
   background: #f9fbfe;
 }
 
 h3 {
-  font-size: 34px;
+  font-size: 24px;
   margin: 0;
-  padding: 8px 28px;
+  padding: 6px 24px;
 }
 
 .table-row {
-  margin: 8px 28px 20px;
-  border-radius: 14px;
+  margin: 6px 24px 14px;
+  border-radius: 12px;
   background: #efe8da;
-  min-height: 68px;
-  padding: 16px;
-  font-size: 26px;
+  min-height: 54px;
+  padding: 12px;
+  font-size: 15px;
   color: #536781;
 }
 
 .submit {
-  height: 72px;
+  height: 52px;
   border: 0;
-  width: 260px;
-  border-radius: 16px;
+  width: 190px;
+  border-radius: 10px;
   background: var(--main);
   color: #fff;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
   display: block;
-  margin: 22px auto 0;
+  margin: 16px auto 0;
   cursor: pointer;
 }
 
 footer {
-  height: 80px;
+  height: 58px;
   background: var(--main);
   color: #a9bad5;
   display: grid;
   place-items: center;
-  font-size: 26px;
+  font-size: 15px;
 }
 
 .success-page {
@@ -318,43 +318,43 @@ footer {
 }
 
 .success-card {
-  width: 540px;
+  width: 460px;
   background: #f6f8fb;
-  border-radius: 16px;
-  padding: 48px 40px 40px;
+  border-radius: 10px;
+  padding: 34px 30px 28px;
   text-align: center;
 }
 
 .success-icon {
-  width: 98px;
-  height: 98px;
-  margin: 0 auto 20px;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 16px;
   border-radius: 50%;
   background: #c7f0df;
   color: #17b685;
   display: grid;
   place-items: center;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 46px;
 }
 
 .success-card h1 {
   margin: 0 0 10px;
-  font-size: 54px;
+  font-size: 40px;
   color: #122f56;
 }
 
 .success-card p {
   color: #8f9cb0;
-  font-size: 32px;
-  margin: 0 0 26px;
+  font-size: 22px;
+  margin: 0 0 20px;
 }
 
 .success-card button {
   width: 100%;
-  height: 64px;
-  border-radius: 16px;
-  font-size: 36px;
+  height: 52px;
+  border-radius: 10px;
+  font-size: 24px;
   margin-top: 12px;
   font-weight: 700;
 }
@@ -372,13 +372,13 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  .brand h2 { font-size: 28px; }
-  .brand p { font-size: 18px; }
-  .title-block h1 { font-size: 42px; }
-  .title-block p { font-size: 24px; }
-  .field span, input, textarea, .drop, .submit, .upload h4 { font-size: 20px; }
-  .card > header { font-size: 30px; }
-  .step span { font-size: 16px; }
+  .brand h2 { font-size: 16px; }
+  .brand p { font-size: 13px; }
+  .title-block h1 { font-size: 30px; }
+  .title-block p { font-size: 18px; }
+  .field span, input, textarea, .drop, .submit, .upload h4 { font-size: 15px; }
+  .card > header { font-size: 18px; }
+  .step span { font-size: 14px; }
   .grid3 { grid-template-columns: 1fr; }
   .uploads { grid-template-columns: 1fr; }
 }
