@@ -1,149 +1,120 @@
 import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import heroImg from './assets/hero.png'
 import './App.css'
 
-const stepLabels = [
-  'اطلاعات شخصی',
-  'مدارک',
-  'بدهی‌ها',
-  'اسناد وام',
-  'اضطراری',
-  'اطلاعات همسر',
-]
-
-function CardSection({ title, icon, colorClass, children }) {
-  return (
-    <section className="form-card">
-      <div className={`card-header ${colorClass}`}>
-        <span className="card-icon">{icon}</span>
-        <h3>{title}</h3>
-      </div>
-      <div className="card-body">{children}</div>
-    </section>
-  )
-}
-
 function App() {
-  const [submitted, setSubmitted] = useState(false)
+  const [count, setCount] = useState(0)
 
   return (
-    <div className="page" dir="rtl">
-      <header className="top-header">
-        <div className="title-group">
-          <div>
-            <h1>سیستم ثبت اطلاعات پرسنلی</h1>
-            <p>Human Resources Management System</p>
-          </div>
-          <div className="logo-circle">HR</div>
+    <>
+      <section id="center">
+        <div className="hero">
+          <img src={heroImg} className="base" width="170" height="179" alt="" />
+          <img src={reactLogo} className="framework" alt="React logo" />
+          <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
-      </header>
-
-      <section className="hero-bar">
         <div>
-          <h2>فرم جامع ثبت اطلاعات پرسنلی</h2>
-          <p>لطفا تمامی بخش‌ها را با دقت و صحت کامل تکمیل نمایید</p>
+          <h1>Get started</h1>
+          <p>
+            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+          </p>
         </div>
-        <div className="progress-wrap">
-          <strong>100%</strong>
-          <span>پیشرفت تکمیل فرم</span>
-          <div className="progress-track">
-            <div className="progress-fill" />
-          </div>
-          <small>مرحله 6 از 6</small>
-        </div>
-      </section>
-
-      <section className="steps">
-        {stepLabels.map((step, i) => (
-          <div key={step} className="step-item done">
-            <span>{i + 1}</span>
-            <p>{step}</p>
-          </div>
-        ))}
-      </section>
-
-      {submitted && (
-        <section className="success-box">
-          <div className="check">✓</div>
-          <h3>اطلاعات با موفقیت ثبت شد</h3>
-          <p>اطلاعات پرسنلی شما ثبت شد. از همکاری شما متشکریم.</p>
-        </section>
-      )}
-
-      <main className="content">
-        <CardSection title="اطلاعات شخصی" icon="👤" colorClass="blue">
-          <div className="grid-3">
-            <input placeholder="نام" />
-            <input placeholder="نام خانوادگی" />
-            <input placeholder="نام پدر" />
-            <input placeholder="کد ملی" />
-            <input placeholder="شماره شناسنامه" />
-            <input placeholder="تاریخ تولد" />
-            <input placeholder="محل تولد" />
-            <input placeholder="وضعیت تاهل" />
-            <input placeholder="شماره موبایل" />
-          </div>
-        </CardSection>
-
-        <CardSection title="مدارک و مستندات" icon="📄" colorClass="purple">
-          <div className="grid-2">
-            <label className="upload-box">کپی صفحه اول شناسنامه</label>
-            <label className="upload-box">کپی کارت ملی (رو)</label>
-            <label className="upload-box">کپی توضیحات شناسنامه</label>
-            <label className="upload-box">کپی کارت ملی (پشت)</label>
-          </div>
-        </CardSection>
-
-        <CardSection title="اطلاعات بدهی‌ها" icon="🧾" colorClass="orange">
-          <div className="grid-3">
-            <input placeholder="شرح کالا/خدمات" />
-            <input placeholder="مبلغ کل" />
-            <input placeholder="تعداد اقساط" />
-            <input placeholder="مبلغ هر قسط" />
-            <input placeholder="تاریخ شروع" />
-            <input placeholder="مانده بدهی" />
-          </div>
-        </CardSection>
-
-        <CardSection title="اسناد وام" icon="📑" colorClass="green">
-          <div className="grid-3">
-            <input placeholder="شماره ثبت سند" />
-            <input placeholder="نوع سند" />
-            <input placeholder="مبلغ سند" />
-            <input placeholder="تاریخ ثبت" />
-            <input placeholder="نام بانک / موسسه" />
-            <input placeholder="شماره حساب وام" />
-          </div>
-        </CardSection>
-
-        <CardSection title="اطلاعات تماس اضطراری" icon="☎" colorClass="red">
-          <div className="grid-3">
-            <input placeholder="نام و نام خانوادگی" />
-            <input placeholder="نسبت با پرسنل" />
-            <input placeholder="شماره موبایل" />
-            <input placeholder="شماره منزل" />
-            <input placeholder="شماره محل کار" />
-            <input placeholder="آدرس" />
-          </div>
-        </CardSection>
-
-        <CardSection title="اطلاعات همسر" icon="❤" colorClass="teal">
-          <div className="grid-3">
-            <input placeholder="نام و نام خانوادگی همسر" />
-            <input placeholder="کد ملی همسر" />
-            <input placeholder="شماره موبایل همسر" />
-            <input placeholder="شغل همسر" />
-            <input placeholder="محل کار همسر" />
-            <input placeholder="آدرس محل کار همسر" />
-          </div>
-        </CardSection>
-
-        <button className="submit-btn" onClick={() => setSubmitted(true)}>
-          ثبت نهایی فرم
+        <button
+          className="counter"
+          onClick={() => setCount((count) => count + 1)}
+        >
+          Count is {count}
         </button>
-      </main>
+      </section>
 
-      <footer className="footer">سیستم مدیریت منابع انسانی — نسخه ۱.۰ — تمامی اطلاعات محرمانه است</footer>
-    </div>
+      <div className="ticks"></div>
+
+      <section id="next-steps">
+        <div id="docs">
+          <svg className="icon" role="presentation" aria-hidden="true">
+            <use href="/icons.svg#documentation-icon"></use>
+          </svg>
+          <h2>Documentation</h2>
+          <p>Your questions, answered</p>
+          <ul>
+            <li>
+              <a href="https://vite.dev/" target="_blank">
+                <img className="logo" src={viteLogo} alt="" />
+                Explore Vite
+              </a>
+            </li>
+            <li>
+              <a href="https://react.dev/" target="_blank">
+                <img className="button-icon" src={reactLogo} alt="" />
+                Learn more
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="social">
+          <svg className="icon" role="presentation" aria-hidden="true">
+            <use href="/icons.svg#social-icon"></use>
+          </svg>
+          <h2>Connect with us</h2>
+          <p>Join the Vite community</p>
+          <ul>
+            <li>
+              <a href="https://github.com/vitejs/vite" target="_blank">
+                <svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#github-icon"></use>
+                </svg>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://chat.vite.dev/" target="_blank">
+                <svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#discord-icon"></use>
+                </svg>
+                Discord
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/vite_js" target="_blank">
+                <svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#x-icon"></use>
+                </svg>
+                X.com
+              </a>
+            </li>
+            <li>
+              <a href="https://bsky.app/profile/vite.dev" target="_blank">
+                <svg
+                  className="button-icon"
+                  role="presentation"
+                  aria-hidden="true"
+                >
+                  <use href="/icons.svg#bluesky-icon"></use>
+                </svg>
+                Bluesky
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div className="ticks"></div>
+      <section id="spacer"></section>
+    </>
   )
 }
 
